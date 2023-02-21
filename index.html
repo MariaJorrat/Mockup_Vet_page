@@ -1,59 +1,475 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Landing Page</title>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
-</head>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<body>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Oswald:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
 
-    <!--Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">Start Bootstrap</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/icons/icons8-doguillo-96.png">
+
+    <title>Pug Pet</title>
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+      <div class="container-fluid">
+        <a class="navbar-brand oswald-font me-2 text-light" href="#">
+          <img
+            class="me-2"
+            src="/assets/logos/LogoNav.png"
+            alt="Pug Pet's Logo"
+            width="30"
+            height="24"
+          />
+          Pug Pet
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav me-auto">
+            <a
+              class="nav-link oswald-font text-light"
+              aria-current="page"
+              href="#"
+              >Home</a
+            >
+            <a
+              class="nav-link oswald-font text-light"
+              aria-current="page"
+              href="#"
+              >About</a
+            >
+            <a
+              class="nav-link oswald-font text-light"
+              aria-current="page"
+              href="#"
+              >Service</a
+            >
+            <a
+              class="nav-link oswald-font text-light"
+              aria-current="page"
+              href="#"
+              >Contact</a
+            >
+          </div>
+          <form class="d-flex">
+            <input
+              class="form-control rect-corner"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button
+              type="button"
+              class="btn btn-info text-light oswald-font rect-corner"
+            >
+              Info
+            </button>
+          </form>
+        </div>
       </div>
     </nav>
-    
+    <!-- end NAVBAR -->
 
-<!--Overlay-->
-    <div class="overlay"></div>
-
-<!--Content: title, subtitle, button-->
-  <div class="container-fluid">
-    <div class="row align-items-center">
-      <div class="col-md-8 mx-auto text-center">
-        <h1 class="display-1 font-bolds">Your Favorite Place for Free Bootstrap Themes</h1>
-        <br>
-        <div class="linea mx-auto"></div>
-        <br>
-        <h2 class="display-5">Start Bootstrap can help you bouild websites using the Bootstrap frameworks! Just download a theme and start customizing, no strings attached!</h2>
-        <br>
-        <button type="button" class="btn btn-primary mb-3">FIND OUT MORE</button>
+    <!-- Seccion 1 /// hacer el responsive SM-centrar texto-->
+    <main class="bg-warning text-white">
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <div class="col-12 col-sn-12 col-md-8 col-lg-8">
+            <h1 class="mt-3">Primero quiero ser un veterinario</h1>
+            <p class="mt-1">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam
+              non, dicta, id velit, mollitia labore odit rerum at sunt saepe
+              quasi aspernatur! Quasi non hic commodi atque facilis voluptates
+              quam!
+            </p>
+            <button class="btn btn-info text-white">Contactanos</button>
+            <button class="btn btn-outline-light">Servicios</button>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+            <img class="img-fluid" src="./assets/perro.png" alt="Dog"/>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
+    </main>
+    <!-- END Seccion 1 -->
+    <!-- Seccion 2 -->
+    <section>
+      <div class="container">
+        <div class="row justify-content-center my-3 py-5">
+          <div class="col-12 col-sm-12 col-md-8">
+            <h2 class="text-left mt-3">Como un veterinario y amante de los animales</h2>
+            <p class="mt-4 text-left">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. At quam
+              necessitatibus quae quisquam voluptatem deserunt sed officiis
+              voluptas repudiandae, consequatur earum consequuntur vel dolorem,
+              quos qui dolor nobis vero culpa!
+            </p>
+              <button class="btn text-light btn-warning">Servicios</button>
+          </div>
+          <div class="col-12 col-sm-8 col-md-4 p-3">
+            <div class="square-wrapper">
+              <div class="overlay-wrapper">
+                <img
+                  class="img-fluid"
+                  src="./assets/Vet.jpg"
+                  alt="Sik and cute dog"
+                />
+                <div class="overlay"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END Seccion 2 -->
 
-</body>
+    <!-- Seccion 3 -->
+    <section class="bg-warning text-white py-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <h2 class="text-center col-12">Especialidades</h2>
+          <p class="col-12 text-center">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint
+            temporibus, eveniet, culpa voluptates rerum soluta recusandae
+            corrupti eius nulla fugit distinctio tempore illo non ea tenetur.
+          </p>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-10">
+            <div class="row">
+              <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                <div class="card custom-card" >
+                  <img src="./assets/seccion3_2.jpg" class="card-img-top custom-card-img" alt="First employee">
+                  <div class="card-body">
+                    <h5 class="card-title text-white text-center">Especialidad 1</h5>
+                    <p class="card-text text-white text-center">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                <div class="card custom-card" >
+                  <img src="./assets/seccion3_3.jpg" class="card-img-top custom-card-img" alt="First employee">
+                  <div class="card-body">
+                    <h5 class="card-title text-white text-center">Especialidad 2</h5>
+                    <p class="card-text text-white text-center">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-12 col-md-12 col-lg-4">
+                <div class="card custom-card" >
+                  <img src="./assets/seccion3.jpg" class="card-img-top custom-card-img" alt="First employee">
+                  <div class="card-body">
+                    <h5 class="card-title text-white text-center">Especialidad 3</h5>
+                    <p class="card-text text-white text-center">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END Seccion 3 -->
+
+    <!-- Seccion 4 -->
+    <section>
+      <div class="container">
+        <div class="row justify-content-center my-5 py-5 flex-column-reverse flex-md-row">
+          <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+            <div class="square-wrapper">
+              <div class="overlay-wrapper">
+                <img
+                  class="img-fluid"
+                  src="./assets/perritoAtendido.jpg"
+                  alt="Sik and cute dog"
+                />
+                <div class="overlay"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-8 text-right">
+            <h2>Información perruna</h2>
+            <p class="">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. At quam
+              necessitatibus quae quisquam voluptatem deserunt sed officiis
+              voluptas repudiandae, consequatur earum consequuntur vel dolorem,
+              quos qui dolor nobis vero culpa!
+            </p>
+            <button class="btn btn-warning text-white mb-3">+Info</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END Seccion 4 -->
+
+    <!-- Seccion 5 -->
+      <section class="bg-warning text-white py-5">
+        <div class="container">
+          <div class="row justify-content-center">
+            <h2 class="text-center col-12">Servicios</h2>
+            <p class="text-center">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint
+              temporibus, eveniet, culpa voluptates rerum soluta recusandae
+              corrupti eius nulla fugit distinctio tempore illo non ea tenetur.
+            </p>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-10">
+              <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-4 py-3">
+                  <div class="card custom-card">
+                    <img src="./assets/seccion5_2.jpg" class="card-img-top custom-card-img-5" alt="First employee">
+                    <div class="card-body text-center">
+                      <h5 class="card-title text-white text-center">Servicio 1</h5>
+                      <button type="button" class="btn btn-info text-light">Info</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 py-3">
+                  <div class="card custom-card">
+                    <img src="./assets/seccion5_3.jpg" class="card-img-top custom-card-img" alt="First employee">
+                    <div class="card-body text-center">
+                      <h5 class="card-title text-white text-center">Servicio 2</h5>
+                      <button type="button" class="btn btn-info text-light">Info</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 py-3">
+                  <div class="card custom-card">
+                    <img src="./assets/seccion5.jpg" class="card-img-top custom-card-img" alt="First employee">
+                    <div class="card-body text-center">
+                      <h5 class="card-title text-white text-center">Servicio 3</h5>
+                      <button type="button" class="btn btn-info text-light">Info</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      </section>
+    <!-- END Seccion 5 -->
+
+    <!-- Seccion 6 -->
+    <section class="bg-white text-dark py-5">
+        <div class="container">
+          <div class="row justify-content-center">
+            <h2 class="text-center col-12">Equipo veterianrio</h2>
+            <p class="col-8 text-center">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint
+              temporibus, eveniet, culpa voluptates rerum soluta recusandae
+              corrupti eius nulla fugit distinctio tempore illo non ea tenetur.
+            </p>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-10">
+              <div class="row">
+                <div class="col-12 col-sm-12 col-lg-4">
+                  <div class="card custom-card">
+                    <img src="./assets/seccion-6_2.jpg" class="card-img-top custom-card-img" alt="First employee">
+                    <div class="card-body text-center">
+                      <h4 class="card-title text-dark text-center">Nombre Apellido</h4>
+                      <h6>VETERINARIO/A</h6>
+                      <div class="btn-group" role="group" aria-label="Small button group">
+                        <button type="button" class="btn btn-outline-secondary btn-sm">
+                          <img src="./assets/icons/icons8-mensaje-relleno-48.png" alt="Descripción de la imagen" />
+                        </button>
+                        <button type="button" class="btn btn-outline-secondary btn-sm">
+                          <img src="./assets/icons/icons8-facebook.svg" alt="Descripción de la imagen" />
+                        </button>
+                        <button type="button" class="btn btn-outline-secondary btn-sm">
+                          <img src="./assets/icons/icons8-whatsapp.svg" alt="Descripción de la imagen" />
+                        </button>
+                      </div>                      
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                  <div class="card custom-card">
+                    <img src="./assets/seccion6_3.jpg" class="card-img-top custom-card-img" alt="First employee">
+                    <div class="card-body text-center">
+                      <h4 class="card-title text-dark text-center">Nombre Apellido</h4>
+                      <h6>ADMINISTRACIÓN</h6>
+                      <div class="btn-group" role="group" aria-label="Small button group">
+                        <button type="button" class="btn btn-outline-secondary btn-sm">
+                          <img src="./assets/icons/icons8-mensaje-relleno-48.png" alt="Descripción de la imagen" />
+                        </button>
+                        <button type="button" class="btn btn-outline-secondary btn-sm">
+                          <img src="./assets/icons/icons8-facebook.svg" alt="Descripción de la imagen" />
+                        </button>
+                        <button type="button" class="btn btn-outline-secondary btn-sm">
+                          <img src="./assets/icons/icons8-whatsapp.svg" alt="Descripción de la imagen" />
+                        </button>
+                      </div>
+                      
+                  </div>
+                </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                  <div class="card custom-card">
+                    <img src="./assets/seccion6.jpg" class="card-img-top custom-card-img" alt="First employee">
+                    <div class="card-body text-center">
+                      <h4 class="card-title text-dark text-center">Nombre Apellido</h4>
+                      <h6>VETERINARIO/A</h6>
+                      <div class="btn-group" role="group" aria-label="Small button group">
+                        <button type="button" class="btn btn-outline-secondary btn-sm">
+                          <img src="./assets/icons/icons8-mensaje-relleno-48.png" alt="Descripción de la imagen" />
+                        </button>
+                        <button type="button" class="btn btn-outline-secondary btn-sm">
+                          <img src="./assets/icons/icons8-facebook.svg" alt="Descripción de la imagen" />
+                        </button>
+                        <button type="button" class="btn btn-outline-secondary btn-sm">
+                          <img src="./assets/icons/icons8-whatsapp.svg" alt="Descripción de la imagen" />
+                        </button>
+                      </div>                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+      </section>
+    <!-- END Seccion 6 -->
+
+    <!-- Seccion 7-->
+    <section class="section-7 pt-5">
+      <div class="container">
+        <div class="d-flex">
+          <div class="col-4 text-center">
+            <img src="./assets/logos/corazon.png" alt="">
+        <p class="text-light 7">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        </p>
+          </div>
+          <div class="col-4 text-center px-2">
+            <img src="./assets/logos/corazon.png" alt="">
+            <p class="text-light 7">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            </p>
+          </div>
+          <div class="col-4 text-center">
+            <img src="./assets/logos/corazon.png" alt="">
+            <p class="text-light 7">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- END Seccion 7 -->
+
+    <!--Formulario-->
+    <br>
+    <form class="py-3 mx-5">
+      <h3>Consultas</h3>
+      <div class="form-group pb-3">
+        <label for="nombre">Nombre</label>
+        <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+      </div>
+      <div class="form-group pb-3">
+        <label for="apellido">Apellido</label>
+        <input type="text" class="form-control" id="apellido" placeholder="Ingrese su apellido">
+      </div>
+      <div class="form-group pb-3">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="Ingrese su email">
+      </div>
+      <div class="form-group pb-3">
+        <label for="telefono">Teléfono</label>
+        <input type="tel" class="form-control" id="telefono" placeholder="Ingrese su teléfono">
+      </div>
+      <div class="form-group pb-3">
+        <label for="texto">Consulta</label>
+        <textarea class="form-control" id="texto" rows="3"></textarea>
+      </div>
+      <button type="submit" class="btn btn-info text-light">Enviar</button>
+    </form>
+    
+    <!--Footer-->
+<footer class="bg-secondary text-white py-5">
+<div class="container">
+<div class="row">
+  <div class="col-12 col-sm-6 col-lg-4">
+    <h5 class="mb-3">Nosotros</h5>
+    <p class="mb-2">Puedes contactarnos en:</p>
+    <p class="mb-2">Calle Falsa 123, Springfield</p>
+    <p class="mb-2">Teléfono: 123-456-7890</p>
+    <p class="mb-2">Email: info@tusitio.com</p>
+  </div>
+  <div class="col-12 col-sm-6 col-lg-4">
+    <h5 class="mb-3">Servicios</h5>
+    <p class="mb-2">Servicio 1</p>
+    <p class="mb-2">Servicio 2</p>
+    <p class="mb-2">Servicio 3</p>
+    <p class="mb-2">Servicio 4</p>
+  </div>
+  <div class="col-12 col-sm-12 col-lg-4">
+    <h5 class="mb-3 pt-5">Suscríbete</h5>
+    <form>
+      <div class="input-group mb-3">
+        <input type="email" class="form-control bg-warning" placeholder="Tu correo electrónico" aria-label="Tu correo electrónico" aria-describedby="button-addon2">
+        <button class="btn btn-info text-light" type="button" id="button-addon2">Suscribir</button>
+      </div>
+      <div class="btn-group" role="group" aria-label="Small button group">
+        <button type="button" class="btn btn-outline-secondary btn-sm">
+          <img src="./assets/icons/icons8-mensaje-relleno-48.png" alt="Descripción de la imagen" />
+        </button>
+        <button type="button" class="btn btn-outline-secondary btn-sm">
+          <img src="./assets/icons/icons8-facebook.svg" alt="Descripción de la imagen" />
+        </button>
+        <button type="button" class="btn btn-outline-secondary btn-sm">
+          <img src="./assets/icons/icons8-whatsapp.svg" alt="Descripción de la imagen" />
+        </button>
+      </div>
+      
+</div>
+
+</footer>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
 </html>
